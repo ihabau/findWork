@@ -1,38 +1,51 @@
 <section class="bg-dark">
     <div class="container">
         <div class="jumbotron">
-            <h1 class="tittle text-center">About Me</h1>
+            <h1 class="tittle text-center font-weight-bold">About Me</h1>
 
         </div>
-        <div class="row jumbotron">
-            <div class="col-sm">picture</div>
+        <div>
+            <button class="introBtn d-sm-none btn btn-info float-right ">Intro</button>
 
-            <div class="col-sm p-3">
-                <ul class="col info">
-                    <li class="row">
-                        <p class="col font-weight-bold">NAME</p>
-                        <p class="col">Ihab Al ubaidi</p>
-                    </li>
-                    <li class="row">
-                        <p class="col font-weight-bold">Age</p>
-                        <p class="col">32</p>
-                    </li>
-                    <li class="row">
-                        <p class="col font-weight-bold">Experience</p>
-                        <p class="col">Junior FrontEnd developer</p>
-                    </li>
-                    <li class="row">
-                        <p class="col font-weight-bold">Phone</p>
-                        <p class="col">+467074932668</p>
-                    </li>
-                    <li class="row">
-                        <p class="col font-weight-bold"> E-mail</p>
-                        <p class="col">ihabau@gmail.com</p>
-
-                </ul>
+            <div class="jumbotron d-md-block contact">
+                <div class="col-sm">picture</div>
+                <div class="p-3">
+                    <ul class="col info">
+                        <li class="row">
+                            <p class="col font-weight-bold">NAME</p>
+                            <p class="col">Ihab Al ubaidi</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold">Age</p>
+                            <p class="col">32</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold">Experience</p>
+                            <p class="col">Junior FrontEnd developer</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold">Phone</p>
+                            <p class="col">+467074932668</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold"> E-mail</p>
+                            <p class="col">ihabau@gmail.com</p>
+                    </ul>
+                </div>
             </div>
+
+            <div class="jumbotron d-none d-md-block intro">
+                <h3 class="font-weight-bold">Intro</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi commodi repudiandae assumenda iure
+                    accusamus delectus, quam maiores dicta. Unde cupiditate veniam odit aspernatur voluptas laudantium
+                    odio
+                    mollitia earum, fugiat aperiam!</p>
+            </div>
+
         </div>
-        <div class="row my-3 jumbotron">
+
+
+        <div class="my-3 jumbotron">
             <form class="col-sm p-3">
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
@@ -49,11 +62,14 @@
                 <button type="submit" class="float-right btn btn-primary">Send Message</button>
             </form>
         </div>
-        <div class="row my-3 jumbotron">
-            <h2>Social Profiles</h2>
-            <div class="row">
-                <i class="fa fa-address-book-o" aria-hidden="true"></i>
-
+        <div class="my-3 jumbotron">
+            <div class="text-right">
+                <h2 class="font-weight-bold">Social Profiles</h2>
+            </div>
+            <div class="text-right">
+                <i class="fa fa-facebook-official m-2 p-2 border border-dark" aria-hidden="true"></i>
+                <i class="fa fa-github-square m-2 p-2 border border-dark" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square m-2 p-2 border border-dark" aria-hidden="true"></i>
             </div>
         </div>
     </div>
