@@ -14,41 +14,37 @@ export class AboutMeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let toggle = false;
+
 
     $(".introBtn").click(function () {
-
-
-      if (toggle == false) {
+      $(".contact").fadeOut("slow", function () {
         $(".intro").removeClass("d-none");
-        $(".intro").show();
-        $(".contact").hide();
-        $(".introBtn").text("contact")
-        $(".introBtn").removeClass("btn-info");
-        $(".introBtn").addClass("btn-danger");
-
-
-        toggle = true;
-
-      } else {
-        $(".intro").hide();
-        $(".contact").show();
-        $(".introBtn").text("Intro")
-        $(".introBtn").removeClass("btn-danger");
-        $(".introBtn").addClass("btn-info");
-
-        toggle = false;
-
-      }
-
-
+        $(".intro").fadeIn("slow");
+      });
 
     })
 
+    $(".edBtn").click(function () {
+      $(".education").fadeOut("slow", function () {
+        $(".contact").fadeIn("slow");
+      });
 
+    })
+
+    $(".infoBtn").click(function () {
+      $(".intro").fadeOut("slow", function () {
+        $(".education").removeClass("d-none");
+
+        $(".education").fadeIn("slow");
+      });
+
+      $(".contact").fadeOut("slow", function () {
+        $(".education").removeClass("d-none");
+
+        $(".education").fadeIn("slow");
+      });
+    })
   }
-
-
 }
 
 
