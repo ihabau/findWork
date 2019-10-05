@@ -1,0 +1,125 @@
+<section class="bg-dark">
+    <div class="container">
+
+
+        <div class="jumbotron relative p-0 p-md-3 pb-3">
+            <nav class="d-sm-none navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler absolute" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link edBtn" href="#introInfo">Personal Information<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link introBtn" href="#introInfo">Introduction<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link infoBtn" href="#introInfo">Education<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contactMe">Contact Me<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#sM">Social Media<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="relative my-5">
+                <button class="absolute btn text-white bg-info">EDIT</button>
+                <h1 class="tittle text-center font-weight-bold">About Me</h1>
+            </div>
+
+
+        </div>
+        <div>
+
+            <div id="introInfo" class="jumbotron d-md-block contact relative text-center">
+
+
+                <div class="contact p-4 row o">
+                    <div class="pic mr-md-5 mx-auto">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <!-- <br>
+                    <hr class="style1">
+                    <br> -->
+
+                    <ul class="col-lg-8 info text-left mt-5 mt-md-0">
+                        <li class="row">
+                            <p class="col font-weight-bold">NAME</p>
+                            <p class="col">Ihab Al ubaidi</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold">Age</p>
+                            <p class="col">32</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold">Experience</p>
+                            <p class="col">Junior FrontEnd developer</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold">Phone</p>
+                            <p class="col">+467074932668</p>
+                        </li>
+                        <li class="row">
+                            <p class="col font-weight-bold"> E-mail</p>
+                            <p class="col">ihabau@gmail.com</p>
+                    </ul>
+                </div>
+
+                <div class="contactEdit p-4 row">
+                    <div class="pic mr-md-5 mx-auto">
+                        <div class=" uploadfilecontainer" (click)="fileInput.click()" appDragDrop
+                            (onFileDropped)="uploadFile($event)">
+                            <input hidden type="file" #fileInput (change)="uploadFile($event.target.files)">
+                        </div>
+                        <div class="files-list" *ngFor="let file of files;let i= index">
+                            <p> {{ file }} </p>
+                            <button class="delete-file" (click)="deleteAttachment(i)">Delete
+                                <!-- <img src="../../assets/Recycle_Bin_Full.png"> -->
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <br>
+                        <hr class="style1">
+                        <br> -->
+
+                    <ul class="mt-5 mt-md-0 col-lg-8 info text-left">
+                        <li class="input-group">
+                            <input class="form-control" placeholder="First Name" type="text">
+                            <input class="form-control" placeholder="Last Name" type="text">
+
+                        </li>
+                        <li class="input-group">
+                            <input class="form-control" placeholder="Age" type="text">
+                        </li>
+                        <li class="input-group">
+                            <input class="form-control" placeholder="Experience" type="text">
+                        </li>
+                        <li class="input-group">
+                            <input class="form-control" placeholder="Phone" type="text">
+                        </li>
+                        <li class="input-group">
+                            <input class="form-control" placeholder="E-mail" type="text">
+                    </ul>
+                </div>
+            </div>
